@@ -11,6 +11,8 @@ device.network.on('wifiOn', function(signal) {
         // launch app
         var apps = device.applications;
         apps.launch(appName);
+		device.media.volume = 50;
+		device.media.play();
         console.log("Launched " + appName);
 }
 
